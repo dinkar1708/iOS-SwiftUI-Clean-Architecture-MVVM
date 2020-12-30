@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  iOS-SwiftUI-Clean-Architecture-MVVM
+
+  Created by Dinakar Prasad Maurya on 2020/12/29.
+  
+*/
+"Loading" = "進行中";
+"Home" = "ホーム";
