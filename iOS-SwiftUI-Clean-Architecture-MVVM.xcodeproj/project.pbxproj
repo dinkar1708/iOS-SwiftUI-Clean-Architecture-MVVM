@@ -10,7 +10,6 @@
 		7F9CDC2C259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9CDC2B259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift */; };
 		7F9CDC2E259ADB1B0091F705 /* AmazonHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9CDC2D259ADB1B0091F705 /* AmazonHomeView.swift */; };
 		7F9CDC30259ADB1C0091F705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F9CDC2F259ADB1C0091F705 /* Assets.xcassets */; };
-		7F9CDC33259ADB1C0091F705 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F9CDC32259ADB1C0091F705 /* Preview Assets.xcassets */; };
 		7F9CDC40259ADFCD0091F705 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F9CDC42259ADFCD0091F705 /* Localizable.strings */; };
 		7F9CDC4F259AEC3F0091F705 /* AmazonHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9CDC4E259AEC3F0091F705 /* AmazonHomeModel.swift */; };
 		7FBDDF5F259C1956009F6D69 /* AmazonHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDDF5E259C1956009F6D69 /* AmazonHomeViewModel.swift */; };
@@ -22,11 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7F9CDC28259ADB1B0091F705 /* iOS-SwiftUI-Clean-Architecture-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SwiftUI-Clean-Architecture-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F9CDC28259ADB1B0091F705 /* Shared.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shared.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9CDC2B259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_SwiftUI_Clean_Architecture_MVVMApp.swift; sourceTree = "<group>"; };
 		7F9CDC2D259ADB1B0091F705 /* AmazonHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonHomeView.swift; sourceTree = "<group>"; };
 		7F9CDC2F259ADB1C0091F705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7F9CDC32259ADB1C0091F705 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F9CDC34259ADB1C0091F705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F9CDC41259ADFCD0091F705 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7F9CDC44259ADFD20091F705 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -62,7 +60,7 @@
 		7F9CDC29259ADB1B0091F705 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F9CDC28259ADB1B0091F705 /* iOS-SwiftUI-Clean-Architecture-MVVM.app */,
+				7F9CDC28259ADB1B0091F705 /* Shared.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,18 +72,9 @@
 				7F9CDC3F259ADCEE0091F705 /* Resources */,
 				7F9CDC2B259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift */,
 				7F9CDC34259ADB1C0091F705 /* Info.plist */,
-				7F9CDC31259ADB1C0091F705 /* Preview Content */,
 				7FBDDF4B259AEFF4009F6D69 /* README.md */,
 			);
 			path = "iOS-SwiftUI-Clean-Architecture-MVVM";
-			sourceTree = "<group>";
-		};
-		7F9CDC31259ADB1C0091F705 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				7F9CDC32259ADB1C0091F705 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		7F9CDC3F259ADCEE0091F705 /* Resources */ = {
@@ -110,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				7FBDDF7B259C8DAE009F6D69 /* Network */,
-				7FBDDF6A259C31CF009F6D69 /* Common */,
 				7FBDDF69259C31A8009F6D69 /* ItemDetails */,
 				7FBDDF68259C319A009F6D69 /* Home */,
 			);
@@ -151,13 +139,6 @@
 			path = ItemDetails;
 			sourceTree = "<group>";
 		};
-		7FBDDF6A259C31CF009F6D69 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		7FBDDF6F259C55F9009F6D69 /* MockData */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F9CDC27259ADB1B0091F705 /* iOS-SwiftUI-Clean-Architecture-MVVM */ = {
+		7F9CDC27259ADB1B0091F705 /* Shared */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F9CDC37259ADB1C0091F705 /* Build configuration list for PBXNativeTarget "iOS-SwiftUI-Clean-Architecture-MVVM" */;
+			buildConfigurationList = 7F9CDC37259ADB1C0091F705 /* Build configuration list for PBXNativeTarget "Shared" */;
 			buildPhases = (
 				7F9CDC24259ADB1B0091F705 /* Sources */,
 				7F9CDC25259ADB1B0091F705 /* Frameworks */,
@@ -191,9 +172,9 @@
 			);
 			dependencies = (
 			);
-			name = "iOS-SwiftUI-Clean-Architecture-MVVM";
+			name = Shared;
 			productName = "iOS-SwiftUI-Clean-Architecture-MVVM";
-			productReference = 7F9CDC28259ADB1B0091F705 /* iOS-SwiftUI-Clean-Architecture-MVVM.app */;
+			productReference = 7F9CDC28259ADB1B0091F705 /* Shared.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +205,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F9CDC27259ADB1B0091F705 /* iOS-SwiftUI-Clean-Architecture-MVVM */,
+				7F9CDC27259ADB1B0091F705 /* Shared */,
 			);
 		};
 /* End PBXProject section */
@@ -234,7 +215,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F9CDC33259ADB1C0091F705 /* Preview Assets.xcassets in Resources */,
 				7F9CDC40259ADFCD0091F705 /* Localizable.strings in Resources */,
 				7F9CDC30259ADB1C0091F705 /* Assets.xcassets in Resources */,
 			);
@@ -396,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS-SwiftUI-Clean-Architecture-MVVM/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "iOS-SwiftUI-Clean-Architecture-MVVM/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -417,7 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS-SwiftUI-Clean-Architecture-MVVM/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "iOS-SwiftUI-Clean-Architecture-MVVM/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -444,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F9CDC37259ADB1C0091F705 /* Build configuration list for PBXNativeTarget "iOS-SwiftUI-Clean-Architecture-MVVM" */ = {
+		7F9CDC37259ADB1C0091F705 /* Build configuration list for PBXNativeTarget "Shared" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F9CDC38259ADB1C0091F705 /* Debug */,
