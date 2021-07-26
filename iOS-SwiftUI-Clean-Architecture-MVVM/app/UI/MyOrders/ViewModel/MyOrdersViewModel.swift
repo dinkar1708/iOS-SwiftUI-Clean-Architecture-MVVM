@@ -34,7 +34,7 @@ final class AmazonHomeViewModel : ObservableObject{
 extension AmazonHomeViewModel {
     enum State {
         case loading
-        case loaded([AmazonHome])
+        case loaded([UserItem])
         case error(String)
     }
 }

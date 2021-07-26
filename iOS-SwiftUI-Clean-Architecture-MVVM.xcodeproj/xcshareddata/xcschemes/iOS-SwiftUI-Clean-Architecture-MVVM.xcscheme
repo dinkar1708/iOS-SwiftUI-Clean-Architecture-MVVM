@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F9CDC27259ADB1B0091F705"
-               BuildableName = "Shared.app"
-               BlueprintName = "Shared"
+               BuildableName = "iOS-SwiftUI-Clean-Architecture-MVVM.app"
+               BlueprintName = "iOS-SwiftUI-Clean-Architecture-MVVM"
                ReferencedContainer = "container:iOS-SwiftUI-Clean-Architecture-MVVM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F9CDC27259ADB1B0091F705"
-            BuildableName = "Shared.app"
-            BlueprintName = "Shared"
+            BuildableName = "iOS-SwiftUI-Clean-Architecture-MVVM.app"
+            BlueprintName = "iOS-SwiftUI-Clean-Architecture-MVVM"
             ReferencedContainer = "container:iOS-SwiftUI-Clean-Architecture-MVVM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F9CDC27259ADB1B0091F705"
-            BuildableName = "Shared.app"
-            BlueprintName = "Shared"
+            BuildableName = "iOS-SwiftUI-Clean-Architecture-MVVM.app"
+            BlueprintName = "iOS-SwiftUI-Clean-Architecture-MVVM"
             ReferencedContainer = "container:iOS-SwiftUI-Clean-Architecture-MVVM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -1,13 +1,13 @@
 //
-//  AmazonHome.swift
-//  iOS-SwiftUI-Clean-Architecture-MVVM
+//  UserItem.swift
+//  Shared
 //
-//  Created by Dinakar Prasad Maurya on 2020/12/29.
+//  Created by Dinakar Maurya on 2021/07/26.
 //
 
 import Foundation
 
-struct AmazonHome : Identifiable, Decodable {
+struct UserItem : Identifiable, Decodable {
     let id = UUID()
     let name : String!
     let image : String!
