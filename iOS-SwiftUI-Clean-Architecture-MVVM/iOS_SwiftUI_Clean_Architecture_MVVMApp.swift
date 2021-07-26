@@ -7,14 +7,13 @@
 
 import SwiftUI
 /**
- SwiftUI App protocol
- The new @main used on a class or struct confirmed to App class to give entry point for your SwiftUI app, and the App will take care of creating all the needed things to start your SwiftUI app so you don’t need to do any extra things or handle things by your self including the platform specific code. Ref https://medium.com/@abedalkareemomreyh/what-is-main-in-swift-bc79fbee741c
+ Entry point of app
  */
 @main
 struct iOS_SwiftUI_Clean_Architecture_MVVMApp: App {
     var body: some Scene {
         WindowGroup {
-            AmazonHomeView(viewModel: AmazonHomeViewModel())
+            HomeView()
         }
     }
 }

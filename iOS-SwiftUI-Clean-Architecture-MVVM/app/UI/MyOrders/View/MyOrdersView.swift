@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MyOrdersView.swift
 //  iOS-SwiftUI-Clean-Architecture-MVVM
 //
 //  Created by Dinakar Prasad Maurya on 2020/12/29.
@@ -9,13 +9,13 @@ import SwiftUI
 /**
  https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app
  */
-struct AmazonHomeView: View {
+struct MyOrdersView: View {
     @ObservedObject var viewModel: AmazonHomeViewModel
 
     var body: some View {
         NavigationView {
             content
-                .navigationBarTitle("Home")
+                .navigationBarTitle("MyOrders")
         }
         .onAppear { self.viewModel.fetchHomeContent() }
     }
@@ -33,10 +33,10 @@ struct AmazonHomeView: View {
         }
     }
 
-    private func list(of homeModels: [AmazonHome]) -> some View {
+    private func list(of homeModels: [UserItem]) -> some View {
         List(homeModels) { model in
             NavigationLink(
-                destination: DetailView(),
+                destination: OrderDetailsView(),
                 label: { HStack { Text(model.name); Text(String(model.price)) }}
             )
         }
@@ -45,9 +45,9 @@ struct AmazonHomeView: View {
 
 struct AmazonHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        List(AmazonHome.getHomeMockData()) { model in
+        List(UserItem.getHomeMockData()) { model in
             NavigationLink(
-                destination: DetailView(),
+                destination: OrderDetailsView(),
                 label: { HStack { Text(model.name); Text(String(model.price)) }}
             )
         }

@@ -1,5 +1,5 @@
 //
-//  DetailView.swift
+//  OrderDetailsView.swift
 //  iOS-SwiftUI-Clean-Architecture-MVVM
 //
 //  Created by Dinakar Prasad Maurya on 2020/12/30.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct DetailView: View {
+struct OrderDetailsView: View {
     var body: some View {
-        Text("Product details")
+        Text("Order details")
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
+struct OrderDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        OrderDetailsView()
     }
 }
