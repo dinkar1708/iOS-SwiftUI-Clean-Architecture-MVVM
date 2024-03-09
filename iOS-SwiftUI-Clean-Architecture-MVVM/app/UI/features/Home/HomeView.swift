@@ -18,7 +18,7 @@ struct HomeContentView: View {
             }
         }) {
             VStack {
-                MyOrdersView(viewModel: AmazonHomeViewModel())
+                MyOrdersView(viewModel: MyOrdersViewModel())
             }
         }
     }

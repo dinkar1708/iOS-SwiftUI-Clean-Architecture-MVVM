@@ -10,7 +10,7 @@ import SwiftUI
  https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app
  */
 struct MyOrdersView: View {
-    @ObservedObject var viewModel: AmazonHomeViewModel
+    @ObservedObject var viewModel: MyOrdersViewModel
 
     var body: some View {
         NavigationView {

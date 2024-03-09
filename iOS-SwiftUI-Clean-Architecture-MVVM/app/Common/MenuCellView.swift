@@ -27,7 +27,7 @@ struct MenuView: View {
             MenuCellView(systemIcon: "house.circle", text: "Home")
             MenuCellView(systemIcon: "person", text: "Profile")
             MenuCellView(systemIcon: "cart.circle", text: "Cart")
-            NavigationLink(destination: MyOrdersView(viewModel: AmazonHomeViewModel()),
+            NavigationLink(destination: MyOrdersView(viewModel: MyOrdersViewModel()),
                            label: {
                             MenuCellView(systemIcon: "folder.badge.person.crop", text: "MyOrders")
                            })
