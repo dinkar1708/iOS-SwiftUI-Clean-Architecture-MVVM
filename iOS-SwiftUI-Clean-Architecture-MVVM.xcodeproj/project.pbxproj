@@ -33,7 +33,6 @@
 		7F9CDC34259ADB1C0091F705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F9CDC41259ADFCD0091F705 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7F9CDC44259ADFD20091F705 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		7FBDDF4B259AEFF4009F6D69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7FBDDF5E259C1956009F6D69 /* MyOrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersViewModel.swift; sourceTree = "<group>"; };
 		7FBDDF61259C1E1D009F6D69 /* OrderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsView.swift; sourceTree = "<group>"; };
 		7FBDDF6C259C55EF009F6D69 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -107,7 +106,6 @@
 				7F9CDC3F259ADCEE0091F705 /* Resources */,
 				7F9CDC2B259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift */,
 				7F9CDC34259ADB1C0091F705 /* Info.plist */,
-				7FBDDF4B259AEFF4009F6D69 /* README.md */,
 			);
 			path = "iOS-SwiftUI-Clean-Architecture-MVVM";
 			sourceTree = "<group>";
