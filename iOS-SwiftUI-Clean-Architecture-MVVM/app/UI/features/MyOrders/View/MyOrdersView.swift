@@ -33,7 +33,7 @@ struct MyOrdersView: View {
         }
     }
 
-    private func list(of homeModels: [UserItem]) -> some View {
+    private func list(of homeModels: [ItemModel]) -> some View {
         List(homeModels) { model in
             NavigationLink(
                 destination: OrderDetailsView(),
@@ -43,9 +43,9 @@ struct MyOrdersView: View {
     }
 }
 
-struct AmazonHomeView_Previews: PreviewProvider {
+struct MyOrdersView_Previews: PreviewProvider {
     static var previews: some View {
-        List(UserItem.getHomeMockData()) { model in
+        List(ItemModel.getHomeMockData()) { model in
             NavigationLink(
                 destination: OrderDetailsView(),
                 label: { HStack { Text(model.name); Text(String(model.price)) }}

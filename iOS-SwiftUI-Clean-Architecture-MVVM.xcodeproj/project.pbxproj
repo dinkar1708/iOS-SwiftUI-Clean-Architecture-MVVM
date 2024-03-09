@@ -10,7 +10,7 @@
 		478EF3F52B9C62C000533449 /* MenuCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF3F42B9C62C000533449 /* MenuCellView.swift */; };
 		478EF3FA2B9C657600533449 /* HomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF3F92B9C657600533449 /* HomeCellView.swift */; };
 		786D3FAC26AE8799009D452A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D3FAB26AE8799009D452A /* HomeView.swift */; };
-		786D3FC426AE98DB009D452A /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D3FC326AE98DB009D452A /* UserItem.swift */; };
+		786D3FC426AE98DB009D452A /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D3FC326AE98DB009D452A /* ItemModel.swift */; };
 		7F9CDC2C259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9CDC2B259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift */; };
 		7F9CDC2E259ADB1B0091F705 /* MyOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9CDC2D259ADB1B0091F705 /* MyOrdersView.swift */; };
 		7F9CDC30259ADB1C0091F705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F9CDC2F259ADB1C0091F705 /* Assets.xcassets */; };
@@ -20,14 +20,14 @@
 		7FBDDF6D259C55EF009F6D69 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDDF6C259C55EF009F6D69 /* MockData.swift */; };
 		7FBDDF72259C5D25009F6D69 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDDF71259C5D25009F6D69 /* APIClient.swift */; };
 		7FBDDF75259C65B2009F6D69 /* MVVMApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDDF74259C65B2009F6D69 /* MVVMApi.swift */; };
-		7FBDDF7F259C9B4E009F6D69 /* AmazonHomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDDF7E259C9B4E009F6D69 /* AmazonHomeAPI.swift */; };
+		7FBDDF7F259C9B4E009F6D69 /* OrdersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDDF7E259C9B4E009F6D69 /* OrdersRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		478EF3F42B9C62C000533449 /* MenuCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCellView.swift; path = "iOS-SwiftUI-Clean-Architecture-MVVM/app/Common/MenuCellView.swift"; sourceTree = SOURCE_ROOT; };
 		478EF3F92B9C657600533449 /* HomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellView.swift; sourceTree = "<group>"; };
 		786D3FAB26AE8799009D452A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		786D3FC326AE98DB009D452A /* UserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
+		786D3FC326AE98DB009D452A /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		7F9CDC28259ADB1B0091F705 /* iOS-SwiftUI-Clean-Architecture-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SwiftUI-Clean-Architecture-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9CDC2B259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_SwiftUI_Clean_Architecture_MVVMApp.swift; sourceTree = "<group>"; };
 		7F9CDC2D259ADB1B0091F705 /* MyOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersView.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		7FBDDF6C259C55EF009F6D69 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		7FBDDF71259C5D25009F6D69 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		7FBDDF74259C65B2009F6D69 /* MVVMApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMApi.swift; sourceTree = "<group>"; };
-		7FBDDF7E259C9B4E009F6D69 /* AmazonHomeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonHomeAPI.swift; sourceTree = "<group>"; };
+		7FBDDF7E259C9B4E009F6D69 /* OrdersRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		478EF3F62B9C63EA00533449 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				7FBDDF7E259C9B4E009F6D69 /* AmazonHomeAPI.swift */,
+				7FBDDF7E259C9B4E009F6D69 /* OrdersRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -117,7 +117,7 @@
 		786D3FC126AE98B8009D452A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				786D3FC326AE98DB009D452A /* UserItem.swift */,
+				786D3FC326AE98DB009D452A /* ItemModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FBDDF7F259C9B4E009F6D69 /* AmazonHomeAPI.swift in Sources */,
+				7FBDDF7F259C9B4E009F6D69 /* OrdersRepository.swift in Sources */,
 				7FBDDF75259C65B2009F6D69 /* MVVMApi.swift in Sources */,
 				7FBDDF72259C5D25009F6D69 /* APIClient.swift in Sources */,
 				7FBDDF6D259C55EF009F6D69 /* MockData.swift in Sources */,
@@ -309,7 +309,7 @@
 				7FBDDF62259C1E1D009F6D69 /* OrderDetailsView.swift in Sources */,
 				478EF3FA2B9C657600533449 /* HomeCellView.swift in Sources */,
 				7FBDDF5F259C1956009F6D69 /* MyOrdersViewModel.swift in Sources */,
-				786D3FC426AE98DB009D452A /* UserItem.swift in Sources */,
+				786D3FC426AE98DB009D452A /* ItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

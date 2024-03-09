@@ -9,9 +9,9 @@ import Foundation
 import Combine
 
 extension MVVMApi {
-    static func getHomeData() -> AnyPublisher<[UserItem], Error> {
-        let homeItems = "/items.json"
-        guard let components = URLComponents(url: baseUrl.appendingPathComponent(homeItems), resolvingAgainstBaseURL: true)
+    static func getMyOrders() -> AnyPublisher<[ItemModel], Error> {
+        let myOrdersApiName = "/items.json"
+        guard let components = URLComponents(url: baseUrl.appendingPathComponent(myOrdersApiName), resolvingAgainstBaseURL: true)
         else { fatalError("URLComponents can not be created!") }
         return apiClient.run(URLRequest(url: components.url!))
             .map(\.value)

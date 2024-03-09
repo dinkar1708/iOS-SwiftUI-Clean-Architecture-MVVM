@@ -18,7 +18,7 @@ final class MyOrdersViewModel : ObservableObject{
     }
 
     func fetchHomeContent() {
-        self.cancellationToken = MVVMApi.getHomeData()
+        self.cancellationToken = MVVMApi.getMyOrders()
             .mapError({ (er) -> Error in
                 self.state = .error(er.localizedDescription)
                 return er
@@ -34,7 +34,7 @@ final class MyOrdersViewModel : ObservableObject{
 extension MyOrdersViewModel {
     enum State {
         case loading
-        case loaded([UserItem])
+        case loaded([ItemModel])
         case error(String)
     }
 }
