@@ -65,9 +65,26 @@
 		478EF3F32B9C621100533449 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				7FBDDF7B259C8DAE009F6D69 /* Network */,
+				478EF3F72B9C63FD00533449 /* Source */,
+				478EF3F62B9C63EA00533449 /* Repository */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		478EF3F62B9C63EA00533449 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7FBDDF7E259C9B4E009F6D69 /* AmazonHomeAPI.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		478EF3F72B9C63FD00533449 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7FBDDF7B259C8DAE009F6D69 /* Network */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		786D3FA126AE4E36009D452A /* Common */ = {
@@ -196,7 +213,6 @@
 				786D3FC126AE98B8009D452A /* Model */,
 				7FBDDF71259C5D25009F6D69 /* APIClient.swift */,
 				7FBDDF74259C65B2009F6D69 /* MVVMApi.swift */,
-				7FBDDF7E259C9B4E009F6D69 /* AmazonHomeAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
