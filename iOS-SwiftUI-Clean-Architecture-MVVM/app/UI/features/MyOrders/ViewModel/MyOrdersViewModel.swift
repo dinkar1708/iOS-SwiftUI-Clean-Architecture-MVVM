@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class AmazonHomeViewModel : ObservableObject{
+final class MyOrdersViewModel : ObservableObject{
     @Published private(set) var state: State
     var cancellationToken: AnyCancellable?
 
@@ -18,7 +18,7 @@ final class AmazonHomeViewModel : ObservableObject{
     }
 
     func fetchHomeContent() {
-        self.cancellationToken = MVVMApi.getHomeData()
+        self.cancellationToken = MVVMApi.getMyOrders()
             .mapError({ (er) -> Error in
                 self.state = .error(er.localizedDescription)
                 return er
@@ -31,10 +31,10 @@ final class AmazonHomeViewModel : ObservableObject{
     }
 }
 
-extension AmazonHomeViewModel {
+extension MyOrdersViewModel {
     enum State {
         case loading
-        case loaded([UserItem])
+        case loaded([ItemModel])
         case error(String)
     }
 }

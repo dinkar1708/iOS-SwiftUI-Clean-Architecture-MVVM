@@ -1,10 +1,15 @@
 # iOS-SwiftUI-Clean-Architecture-MVVM
 SwiftUI iOS mvvm design
 
-
+# Features
 ## Screenshots-
-<img src="https://user-images.githubusercontent.com/14831652/126978292-b2459e5d-5487-4017-9beb-bf0f945b3ca3.png" alt="Side Menu" width="300" >
+![Simulator Screenshot - iPhone 15 Pro Max - 2024-03-09 at 18 49 51](https://github.com/dinkar1708/iOS-SwiftUI-Clean-Architecture-MVVM/assets/14831652/cce51b17-1bc8-44af-b98d-1d6fc88984b2)
+![Simulator Screenshot - iPhone 15 Pro Max - 2024-03-09 at 18 49 53](https://github.com/dinkar1708/iOS-SwiftUI-Clean-Architecture-MVVM/assets/14831652/cc43cc6f-0907-4553-b788-e7c9f06d0418)
 
-<img src="https://user-images.githubusercontent.com/14831652/126978304-965f8f91-699a-4b7b-b0c5-927407bb582d.png" alt="Home" width="300" >
+# TODO
+- Menu view - cart, profile, setting etc.
+- Fix ui
+- add test cases
+- update read me
 
 

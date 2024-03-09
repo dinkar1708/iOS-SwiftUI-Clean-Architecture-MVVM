@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension UserItem {
+extension ItemModel {
     static func getHomeMockData() -> [Self] {
         return [
             Self(name: "pixel4", image: "image", price: 90000),
