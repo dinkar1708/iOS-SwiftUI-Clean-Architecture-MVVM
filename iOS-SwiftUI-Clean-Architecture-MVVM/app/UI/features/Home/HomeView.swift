@@ -7,23 +7,6 @@
 
 import SwiftUI
 
-struct HomeContentView: View {
-    
-    @Binding var showMenu: Bool
-    
-    var body: some View {
-        Button(action: {
-            withAnimation {
-                self.showMenu = true
-            }
-        }) {
-            VStack {
-                MyOrdersView(viewModel: MyOrdersViewModel())
-            }
-        }
-    }
-}
-
 struct HomeView: View {
     @State var showMenu = false
     var body: some View {
