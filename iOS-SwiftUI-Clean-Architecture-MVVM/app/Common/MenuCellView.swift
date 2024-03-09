@@ -1,5 +1,5 @@
 //
-//  MenuView.swift
+//  MenuCellView.swift
 //  Shared
 //
 //  Created by Dinakar Maurya on 2021/07/26.

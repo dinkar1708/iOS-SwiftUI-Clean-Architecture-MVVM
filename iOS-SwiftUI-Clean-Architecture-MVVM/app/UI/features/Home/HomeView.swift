@@ -18,7 +18,6 @@ struct HomeContentView: View {
             }
         }) {
             VStack {
-                Text("Up comming orders..........")
                 MyOrdersView(viewModel: AmazonHomeViewModel())
             }
         }
