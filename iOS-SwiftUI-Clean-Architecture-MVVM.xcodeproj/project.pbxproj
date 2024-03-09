@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		786D3FA326AE4E49009D452A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D3FA226AE4E49009D452A /* MenuView.swift */; };
+		478EF3F52B9C62C000533449 /* MenuCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF3F42B9C62C000533449 /* MenuCellView.swift */; };
 		786D3FAC26AE8799009D452A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D3FAB26AE8799009D452A /* HomeView.swift */; };
 		786D3FC426AE98DB009D452A /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D3FC326AE98DB009D452A /* UserItem.swift */; };
 		7F9CDC2C259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9CDC2B259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		786D3FA226AE4E49009D452A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		478EF3F42B9C62C000533449 /* MenuCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCellView.swift; path = "iOS-SwiftUI-Clean-Architecture-MVVM/app/Common/MenuCellView.swift"; sourceTree = SOURCE_ROOT; };
 		786D3FAB26AE8799009D452A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		786D3FC326AE98DB009D452A /* UserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
 		7F9CDC28259ADB1B0091F705 /* iOS-SwiftUI-Clean-Architecture-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SwiftUI-Clean-Architecture-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,10 +52,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		478EF3F22B9C61B300533449 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				786D3FA926AE876F009D452A /* Home */,
+				7FBDDF69259C31A8009F6D69 /* OrderDetails */,
+				7FBDDF68259C319A009F6D69 /* MyOrders */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		478EF3F32B9C621100533449 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				7FBDDF7B259C8DAE009F6D69 /* Network */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		786D3FA126AE4E36009D452A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				786D3FA226AE4E49009D452A /* MenuView.swift */,
+				478EF3F42B9C62C000533449 /* MenuCellView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -69,13 +87,6 @@
 			sourceTree = "<group>";
 		};
 		786D3FC126AE98B8009D452A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		786D3FC226AE98C9009D452A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				786D3FC326AE98DB009D452A /* UserItem.swift */,
@@ -122,8 +133,7 @@
 		7F9CDC46259AE2560091F705 /* app */ = {
 			isa = PBXGroup;
 			children = (
-				7FBDDF7B259C8DAE009F6D69 /* Network */,
-				786D3FA126AE4E36009D452A /* Common */,
+				478EF3F32B9C621100533449 /* data */,
 				7F9CDC4D259AEC2F0091F705 /* UI */,
 				7FBDDF6F259C55F9009F6D69 /* MockData */,
 			);
@@ -133,10 +143,8 @@
 		7F9CDC4D259AEC2F0091F705 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				786D3FC226AE98C9009D452A /* Model */,
-				786D3FA926AE876F009D452A /* Home */,
-				7FBDDF69259C31A8009F6D69 /* OrderDetails */,
-				7FBDDF68259C319A009F6D69 /* MyOrders */,
+				786D3FA126AE4E36009D452A /* Common */,
+				478EF3F22B9C61B300533449 /* features */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -268,9 +276,9 @@
 				7FBDDF72259C5D25009F6D69 /* APIClient.swift in Sources */,
 				7FBDDF6D259C55EF009F6D69 /* MockData.swift in Sources */,
 				786D3FAC26AE8799009D452A /* HomeView.swift in Sources */,
-				786D3FA326AE4E49009D452A /* MenuView.swift in Sources */,
 				7F9CDC2E259ADB1B0091F705 /* MyOrdersView.swift in Sources */,
 				7F9CDC2C259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift in Sources */,
+				478EF3F52B9C62C000533449 /* MenuCellView.swift in Sources */,
 				7FBDDF62259C1E1D009F6D69 /* OrderDetailsView.swift in Sources */,
 				7FBDDF5F259C1956009F6D69 /* MyOrdersViewModel.swift in Sources */,
 				786D3FC426AE98DB009D452A /* UserItem.swift in Sources */,
