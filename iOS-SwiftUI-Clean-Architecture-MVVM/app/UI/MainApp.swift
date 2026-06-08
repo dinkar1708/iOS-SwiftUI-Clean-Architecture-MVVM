@@ -114,7 +114,7 @@ struct EnhancedHomeView: View {
                                 Text("Welcome Back!")
                                     .font(.system(size: 16, weight: .medium))
                                     .foregroundColor(AppColors.textSecondary)
-                                Text("Explore Best Deals")
+                                Text("Explore Best Products")
                                     .font(.system(size: 28, weight: .bold))
                                     .foregroundColor(AppColors.textPrimary)
                             }
