@@ -146,67 +146,88 @@ struct RoundedCorner: Shape {
 // MARK: - Product Card
 struct ProductCard: View {
     let model: ItemModel
-    @State private var isPressed = false
+    @State private var isAdded = false
+    @ObservedObject var cartManager = CartManager.shared
 
     var body: some View {
-        NavigationLink(destination: OrderDetailsView()) {
-            HStack(spacing: 16) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 16)
-                        .fill(LinearGradient(colors: [AppColors.primary.opacity(0.3), AppColors.secondary.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomTrailing))
-                        .frame(width: 80, height: 80)
-                    Image(systemName: "bag.fill")
-                        .font(.system(size: 36))
-                        .foregroundColor(AppColors.primary)
-                }
-
-                VStack(alignment: .leading, spacing: 8) {
-                    Text(model.name)
-                        .font(.system(size: 18, weight: .bold))
-                        .foregroundColor(AppColors.textPrimary)
-                        .lineLimit(1)
-
-                    HStack(spacing: 4) {
-                        Image(systemName: "star.fill")
-                            .font(.system(size: 12))
-                            .foregroundColor(AppColors.warning)
-                        Text("4.8")
-                            .font(.system(size: 13, weight: .semibold))
-                            .foregroundColor(AppColors.textSecondary)
-                        Text("(120)")
-                            .font(.system(size: 12))
-                            .foregroundColor(AppColors.textLight)
-                    }
-
-                    HStack {
-                        Text("$\(String(format: "%.2f", model.price))")
-                            .font(.system(size: 20, weight: .bold))
-                            .foregroundColor(AppColors.primary)
-
-                        Spacer()
-
-                        Button(action: { withAnimation(.spring(response: 0.3)) { isPressed.toggle() }}) {
-                            ZStack {
-                                Circle()
-                                    .fill(LinearGradient(colors: [AppColors.primary, AppColors.gradientEnd], startPoint: .topLeading, endPoint: .bottomTrailing))
-                                    .frame(width: 36, height: 36)
-                                    .shadow(color: AppColors.primary.opacity(0.4), radius: 8, x: 0, y: 4)
-                                Image(systemName: isPressed ? "checkmark" : "plus")
-                                    .font(.system(size: 16, weight: .bold))
-                                    .foregroundColor(.white)
-                            }
-                        }
-                        .scaleEffect(isPressed ? 0.9 : 1.0)
-                    }
-                }
-                Spacer()
+        HStack(spacing: 16) {
+            // Product Image
+            ZStack {
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(LinearGradient(colors: [AppColors.primary.opacity(0.3), AppColors.secondary.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .frame(width: 80, height: 80)
+                Image(systemName: productIcon)
+                    .font(.system(size: 36))
+                    .foregroundColor(AppColors.primary)
             }
-            .padding(16)
-            .background(AppColors.cardBackground)
-            .cornerRadius(20)
-            .shadow(color: Color.black.opacity(0.06), radius: 12, x: 0, y: 4)
+
+            // Product Details
+            VStack(alignment: .leading, spacing: 8) {
+                Text(model.name)
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(AppColors.textPrimary)
+                    .lineLimit(2)
+
+                HStack(spacing: 4) {
+                    Image(systemName: "star.fill")
+                        .font(.system(size: 12))
+                        .foregroundColor(AppColors.warning)
+                    Text("4.8")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundColor(AppColors.textSecondary)
+                    Text("(120)")
+                        .font(.system(size: 12))
+                        .foregroundColor(AppColors.textLight)
+                }
+
+                HStack {
+                    Text("₹\(String(format: "%.0f", model.price))")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(AppColors.primary)
+
+                    Spacer()
+
+                    // Add to Cart Button
+                    Button(action: {
+                        addToCart()
+                    }) {
+                        ZStack {
+                            Circle()
+                                .fill(LinearGradient(colors: [isAdded ? AppColors.success : AppColors.primary, isAdded ? AppColors.success : AppColors.gradientEnd], startPoint: .topLeading, endPoint: .bottomTrailing))
+                                .frame(width: 36, height: 36)
+                                .shadow(color: (isAdded ? AppColors.success : AppColors.primary).opacity(0.4), radius: 8, x: 0, y: 4)
+                            Image(systemName: isAdded ? "checkmark" : "plus")
+                                .font(.system(size: 16, weight: .bold))
+                                .foregroundColor(.white)
+                        }
+                    }
+                    .scaleEffect(isAdded ? 0.9 : 1.0)
+                }
+            }
+            Spacer()
         }
-        .buttonStyle(CardButtonStyle())
+        .padding(16)
+        .background(AppColors.cardBackground)
+        .cornerRadius(20)
+        .shadow(color: Color.black.opacity(0.06), radius: 12, x: 0, y: 4)
+    }
+
+    private func addToCart() {
+        cartManager.addToCart(product: model)
+        withAnimation(.spring(response: 0.3)) {
+            isAdded = true
+        }
+        // Reset after 1 second
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            withAnimation {
+                isAdded = false
+            }
+        }
+    }
+
+    private var productIcon: String {
+        let icons = ["iphone", "laptopcomputer", "headphones", "applewatch", "camera.fill", "gamecontroller.fill"]
+        return icons[abs(model.name.hashValue) % icons.count]
     }
 }
 
