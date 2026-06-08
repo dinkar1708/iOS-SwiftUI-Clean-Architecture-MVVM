@@ -13,11 +13,9 @@ struct MyOrdersView: View {
     @ObservedObject var viewModel: MyOrdersViewModel
 
     var body: some View {
-        NavigationView {
-            content
-                .navigationBarTitle("MyOrders")
-        }
-        .onAppear { self.viewModel.fetchHomeContent() }
+        content
+            .navigationBarTitle("My Orders", displayMode: .large)
+            .onAppear { self.viewModel.fetchHomeContent() }
     }
 
     private var content: some View {
@@ -34,12 +32,16 @@ struct MyOrdersView: View {
     }
 
     private func list(of homeModels: [ItemModel]) -> some View {
-        List(homeModels) { model in
-            NavigationLink(
-                destination: OrderDetailsView(),
-                label: { HStack { Text(model.name); Text(String(model.price)) }}
-            )
+        ScrollView(showsIndicators: false) {
+            LazyVStack(spacing: 16) {
+                ForEach(homeModels) { model in
+                    ProductCard(model: model)
+                }
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 16)
         }
+        .background(AppColors.background)
     }
 }
 

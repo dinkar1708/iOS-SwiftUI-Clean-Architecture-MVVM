@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		478EF3F52B9C62C000533449 /* MenuCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF3F42B9C62C000533449 /* MenuCellView.swift */; };
 		478EF3FA2B9C657600533449 /* HomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF3F92B9C657600533449 /* HomeCellView.swift */; };
+		6C43FDA5B84B9D2FAE242E00 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3243CAA7BC937E7F1CA74 /* MainApp.swift */; };
 		786D3FAC26AE8799009D452A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D3FAB26AE8799009D452A /* HomeView.swift */; };
 		786D3FC426AE98DB009D452A /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786D3FC326AE98DB009D452A /* ItemModel.swift */; };
 		7F9CDC2C259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9CDC2B259ADB1B0091F705 /* iOS_SwiftUI_Clean_Architecture_MVVMApp.swift */; };
@@ -21,9 +22,12 @@
 		7FBDDF72259C5D25009F6D69 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDDF71259C5D25009F6D69 /* APIClient.swift */; };
 		7FBDDF75259C65B2009F6D69 /* MVVMApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDDF74259C65B2009F6D69 /* MVVMApi.swift */; };
 		7FBDDF7F259C9B4E009F6D69 /* OrdersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDDF7E259C9B4E009F6D69 /* OrdersRepository.swift */; };
+		F7A76EC214B951B2A0973B89 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1236A5B073C878D421BDC00A /* AppTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1236A5B073C878D421BDC00A /* AppTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTheme.swift; path = "iOS-SwiftUI-Clean-Architecture-MVVM/app/Common/AppTheme.swift"; sourceTree = "<group>"; };
+		34B3243CAA7BC937E7F1CA74 /* MainApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MainApp.swift; path = "iOS-SwiftUI-Clean-Architecture-MVVM/app/UI/MainApp.swift"; sourceTree = "<group>"; };
 		478EF3F42B9C62C000533449 /* MenuCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCellView.swift; path = "iOS-SwiftUI-Clean-Architecture-MVVM/app/Common/MenuCellView.swift"; sourceTree = SOURCE_ROOT; };
 		478EF3F92B9C657600533449 /* HomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellView.swift; sourceTree = "<group>"; };
 		786D3FAB26AE8799009D452A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 			children = (
 				7F9CDC2A259ADB1B0091F705 /* iOS-SwiftUI-Clean-Architecture-MVVM */,
 				7F9CDC29259ADB1B0091F705 /* Products */,
+				1236A5B073C878D421BDC00A /* AppTheme.swift */,
+				34B3243CAA7BC937E7F1CA74 /* MainApp.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +170,7 @@
 				478EF3F32B9C621100533449 /* data */,
 				7F9CDC4D259AEC2F0091F705 /* UI */,
 				7FBDDF6F259C55F9009F6D69 /* MockData */,
+				831865C7132EEE4343D624AF /* Common */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -226,6 +233,13 @@
 				7FBDDF74259C65B2009F6D69 /* MVVMApi.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		831865C7132EEE4343D624AF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +324,8 @@
 				478EF3FA2B9C657600533449 /* HomeCellView.swift in Sources */,
 				7FBDDF5F259C1956009F6D69 /* MyOrdersViewModel.swift in Sources */,
 				786D3FC426AE98DB009D452A /* ItemModel.swift in Sources */,
+				F7A76EC214B951B2A0973B89 /* AppTheme.swift in Sources */,
+				6C43FDA5B84B9D2FAE242E00 /* MainApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

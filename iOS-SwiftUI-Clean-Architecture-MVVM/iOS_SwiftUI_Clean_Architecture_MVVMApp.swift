@@ -7,13 +7,13 @@
 
 import SwiftUI
 /**
- Entry point of app
+ Entry point of app with modern UI design
  */
 @main
 struct iOS_SwiftUI_Clean_Architecture_MVVMApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SplashScreenView()
         }
     }
 }
