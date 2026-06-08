@@ -3,7 +3,7 @@
 A modern iOS shopping app built with SwiftUI following Clean Architecture and MVVM design patterns. Features a beautiful UI with custom tab bar, animated splash screen, and modern color scheme.
 
 ## Demo
-
+https://github.com/user-attachments/assets/38f9275d-cd2a-40a1-9672-ba44df5c8663
 
 ## User Testing Flows
 
