@@ -76,20 +76,24 @@ struct CustomTabBar: View {
     @Namespace private var animation
 
     var body: some View {
-        HStack(spacing: 0) {
-            ForEach(TabItem.allCases, id: \.self) { tab in
-                TabBarButton(tab: tab, isSelected: selectedTab == tab, animation: animation) {
-                    withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                        selectedTab = tab
+        VStack(spacing: 0) {
+            HStack(spacing: 0) {
+                ForEach(TabItem.allCases, id: \.self) { tab in
+                    TabBarButton(tab: tab, isSelected: selectedTab == tab, animation: animation) {
+                        withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                            selectedTab = tab
+                        }
                     }
                 }
             }
+            .padding(.horizontal, 8)
+            .padding(.top, 12)
+            .padding(.bottom, 8)
         }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 12)
         .background(
             AppColors.tabBarBackground
                 .shadow(color: Color.black.opacity(0.08), radius: 10, x: 0, y: -5)
+                .ignoresSafeArea(edges: .bottom)
         )
         .cornerRadius(24, corners: [.topLeft, .topRight])
     }
