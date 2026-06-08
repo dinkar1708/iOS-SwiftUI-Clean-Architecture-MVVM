@@ -2,6 +2,9 @@
 
 A modern iOS shopping app built with SwiftUI following Clean Architecture and MVVM design patterns. Features a beautiful UI with custom tab bar, animated splash screen, and modern color scheme.
 
+## Demo
+
+
 ## User Testing Flows
 
 [View All Testing Flows](docs/user-flows/) - 6 practical user flows for manual testing
@@ -32,9 +35,16 @@ Test the complete app experience:
 
 For detailed feature documentation, see [User Testing Flows](docs/user-flows/)
 
-### Screenshots
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-03-09 at 18 49 51](https://github.com/dinkar1708/iOS-SwiftUI-Clean-Architecture-MVVM/assets/14831652/cce51b17-1bc8-44af-b98d-1d6fc88984b2)
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-03-09 at 18 49 53](https://github.com/dinkar1708/iOS-SwiftUI-Clean-Architecture-MVVM/assets/14831652/cc43cc6f-0907-4553-b788-e7c9f06d0418)
+### Demo / Screenshots
+
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 17e - 2026-06-08 at 11 05 20" src="https://github.com/user-attachments/assets/b2ad4010-a4e6-47fd-8a05-06fa1fb18570" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 17e - 2026-06-08 at 11 05 14" src="https://github.com/user-attachments/assets/976c9386-3add-4cef-bc90-475554f10a83" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 17e - 2026-06-08 at 11 05 10" src="https://github.com/user-attachments/assets/1038c471-77c2-4169-819e-b26de4f24953" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 17e - 2026-06-08 at 11 05 07" src="https://github.com/user-attachments/assets/2d4710c0-a098-4f98-976b-7f80f0a2f6dd" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 17e - 2026-06-08 at 11 05 04" src="https://github.com/user-attachments/assets/e6ec038e-7c06-4c0e-87b0-b8477f0b28e6" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 17e - 2026-06-08 at 11 04 48" src="https://github.com/user-attachments/assets/626d1a0f-0a51-45ef-b6b1-022b55105597" />
+<img width="400" height="800" alt="Simulator Screenshot - iPhone 17e - 2026-06-08 at 10 59 23" src="https://github.com/user-attachments/assets/b6b8c928-40ee-4737-aa02-ae33118ebfc2" />
+
 
 ## Requirements
 
